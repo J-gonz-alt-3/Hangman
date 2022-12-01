@@ -12,10 +12,11 @@ export function HangmanWord({ guessedLetters, wordToGuess }: HangmanWordProps) {
         fontWeight: "bold",
         textTransform: "uppercase",
         fontFamily: "monospace",
+        color: "white",
       }}
     >
       {wordToGuess.split("").map((letter, index) => (
-        <span style={{ borderBottom: ".1em solid black" }} key={index}>
+        <span style={{ borderBottom: ".1em solid white" }} key={index}>
           <span
             style={{
               visibility: guessedLetters.includes(letter)

@@ -54,9 +54,12 @@ function App() {
         gap: "2rem",
         margin: "0 auto",
         alignItems: "center",
+        background: "#010203",
+        borderRadius: "1%",
+        padding: "0.5rem",
       }}
     >
-      <div style={{ fontSize: "2rem", textAlign: "center" }}>
+      <div style={{ fontSize: "2rem", textAlign: "center", color: "white" }}>
         {isWinner && "Winner! - Refresh to try again!"}
         {isLoser && "Nice Try - Refresh to try again!"}
       </div>
