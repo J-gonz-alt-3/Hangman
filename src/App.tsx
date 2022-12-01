@@ -45,6 +45,21 @@ function App() {
     };
   }, [guessedLetters]);
 
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      const key = e.key;
+      if (key !== "Enter") return;
+
+      e.preventDefault();
+      setGuessedLetters([]);
+      setWordToGuess(getWord());
+    };
+    document.addEventListener("keypress", handler);
+    return () => {
+      document.removeEventListener("keypress", handler);
+    };
+  }, []);
+
   return (
     <div
       style={{
@@ -67,8 +82,8 @@ function App() {
           fontFamily: "'Press Start 2P', cursive",
         }}
       >
-        {isWinner && "Winner! - Refresh to try again!"}
-        {isLoser && "Nice Try - Refresh to try again!"}
+        {isWinner && "Winner! - Hit Enter Key to Try Again!"}
+        {isLoser && "Nice Try - Hit Enter Key to Try Again!"}
       </div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord
