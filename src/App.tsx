@@ -82,8 +82,8 @@ function App() {
           fontFamily: "'Press Start 2P', cursive",
         }}
       >
-        {isWinner && "Winner! - Hit Enter Key to Try Again!"}
-        {isLoser && "Nice Try - Hit Enter Key to Try Again!"}
+        {isWinner && "Winner! - Hit Enter to Try Again!"}
+        {isLoser && "Nice Try - Hit Enter to Try Again!"}
       </div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
       <HangmanWord
