@@ -63,7 +63,7 @@ function App() {
         style={{
           fontSize: "1.5rem",
           textAlign: "center",
-          color: "white",
+          color: "whitesmoke",
           fontFamily: "'Press Start 2P', cursive",
         }}
       >
@@ -71,7 +71,11 @@ function App() {
         {isLoser && "Nice Try - Refresh to try again!"}
       </div>
       <HangmanDrawing numberOfGuesses={incorrectLetters.length} />
-      <HangmanWord guessedLetters={guessedLetters} wordToGuess={wordToGuess} />
+      <HangmanWord
+        reveal={isLoser}
+        guessedLetters={guessedLetters}
+        wordToGuess={wordToGuess}
+      />
       <div style={{ alignSelf: "stretch" }}>
         <Keyboard
           disabled={isWinner || isLoser}

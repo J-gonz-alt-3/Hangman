@@ -4,7 +4,7 @@ const HEAD = (
       width: "50px",
       height: "50px",
       borderRadius: "100%",
-      border: "10px solid #51d0de",
+      border: "10px solid red",
       position: "absolute",
       top: "50px",
       right: "-30px",
@@ -16,7 +16,7 @@ const BODY = (
     style={{
       width: "10px",
       height: "100px",
-      background: "#51d0de",
+      background: "red",
       position: "absolute",
       top: "120px",
       right: 0,
@@ -28,7 +28,7 @@ const RIGHT_ARM = (
     style={{
       width: "100px",
       height: "10px",
-      background: "#51d0de",
+      background: "red",
       position: "absolute",
       top: "150px",
       right: "-100px",
@@ -42,7 +42,7 @@ const LEFT_ARM = (
     style={{
       width: "100px",
       height: "10px",
-      background: "#51d0de",
+      background: "red",
       position: "absolute",
       top: "150px",
       right: "10px",
@@ -56,7 +56,7 @@ const RIGHT_LEG = (
     style={{
       width: "100px",
       height: "10px",
-      background: "#51d0de",
+      background: "red",
       position: "absolute",
       top: "210px",
       right: "-90px",
@@ -70,7 +70,7 @@ const LEFT_LEG = (
     style={{
       width: "100px",
       height: "10px",
-      background: "#51d0de",
+      background: "red",
       position: "absolute",
       top: "210px",
       right: 0,
@@ -94,37 +94,41 @@ export function HangmanDrawing({ numberOfGuesses }: HangmanDrawingProps) {
         style={{
           height: "50px",
           width: "10px",
-          background:
-            "linear-gradient(hsl(220deg, 80%, 80%), hsl(250deg, 80%, 80%))",
+          background: "whitesmoke",
           top: 0,
           right: 0,
           position: "absolute",
+          borderStyle: "dashed",
+          borderColor: "blue",
         }}
       />
       <div
         style={{
           height: "10px",
           width: "200px",
-          background:
-            "linear-gradient(hsl(220deg, 80%, 80%), hsl(250deg, 80%, 80%))",
+          background: "whitesmoke",
           marginLeft: "120px",
+          borderStyle: "dashed",
+          borderColor: "blue",
         }}
       />
       <div
         style={{
           height: "400px",
           width: "10px",
-          background:
-            "linear-gradient(hsl(220deg, 80%, 80%), hsl(250deg, 80%, 80%))",
+          background: "whitesmoke",
           marginLeft: "120px",
+          borderStyle: "dashed",
+          borderColor: "blue",
         }}
       />
       <div
         style={{
           height: "10px",
           width: "250px",
-          background:
-            "linear-gradient(hsl(220deg, 80%, 80%), hsl(250deg, 80%, 80%))",
+          background: "whitesmoke",
+          borderStyle: "dashed",
+          borderColor: "blue",
         }}
       />
     </div>
