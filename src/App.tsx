@@ -57,6 +57,8 @@ function App() {
         background: "#010203",
         borderRadius: "1%",
         padding: "0.5rem",
+        boxSizing: "border-box",
+        overflowX: "hidden",
       }}
     >
       <div style={{ fontSize: "2rem", textAlign: "center", color: "white" }}>
