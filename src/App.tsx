@@ -59,7 +59,14 @@ function App() {
         padding: "0.5rem",
       }}
     >
-      <div style={{ fontSize: "2rem", textAlign: "center", color: "white" }}>
+      <div
+        style={{
+          fontSize: "1.5rem",
+          textAlign: "center",
+          color: "white",
+          fontFamily: "'Press Start 2P', cursive",
+        }}
+      >
         {isWinner && "Winner! - Refresh to try again!"}
         {isLoser && "Nice Try - Refresh to try again!"}
       </div>
