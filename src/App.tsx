@@ -69,7 +69,7 @@ function App() {
         gap: "2rem",
         margin: "0 auto",
         alignItems: "center",
-        background: "#010203",
+        background: "pink",
         borderRadius: "1%",
         padding: "0.5rem",
       }}
@@ -78,7 +78,7 @@ function App() {
         style={{
           fontSize: "1.5rem",
           textAlign: "center",
-          color: "whitesmoke",
+          color: "darkblue",
           fontFamily: "'Press Start 2P', cursive",
         }}
       >
